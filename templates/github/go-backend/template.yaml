@@ -8,9 +8,9 @@ metadata:
     - recommended
     - go
 spec:
-  owner: guest
-  system: janus-idp
+  owner: vvrepo
   type: service
+  system: janus-idp
 
   parameters:
     - title: Provide information about the new component
@@ -35,7 +35,8 @@ spec:
           ui:options:
             catalogFilter:
               kind:
-                - usernameMatchingUserEntityName
+                - User
+                - Group
         system:
           title: System
           type: string
