@@ -32,7 +32,8 @@ spec:
           ui:field: EntityPicker
           ui:options:
             catalogFilter:
-              - kind: User
+              - kind: Group
+                spec.type: team
         port:
           title: Port
           type: number
