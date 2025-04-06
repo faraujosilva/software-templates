@@ -34,9 +34,7 @@ spec:
           ui:field: EntityPicker
           ui:options:
             catalogFilter:
-              kind:
-                - User
-                - Group
+              - kind: User
         system:
           title: System
           type: string
