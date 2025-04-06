@@ -15,18 +15,19 @@ spec:
   parameters:
     - title: Provide information about the new component
       required:
-        - repoName
-        - owner
+        - projectName
+        # - owner
         - system
         - port
       properties:
-        repoName:
-          title: Repository Name
+        projectName:
+          title: Nome do Projeto
           type: string
-        description:
-          title: Description
-          type: string
-          description: Help others understand what this component is for
+          description: Nome do projeto
+          maxLength: 15
+          ui:autofocus: true
+          ui:options:
+            placeholder: Nome do projeto
         owner:
           title: Owner
           type: string
@@ -34,8 +35,7 @@ spec:
           ui:options:
             catalogFilter:
               kind:
-                - Group
-                - User
+                - usernameMatchingUserEntityName
         system:
           title: System
           type: string
