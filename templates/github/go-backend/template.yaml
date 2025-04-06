@@ -8,7 +8,7 @@ metadata:
     - recommended
     - go
 spec:
-  owner: vvrepo
+  owner: ${{ parameters.owner }}
   type: service
   system: janus-idp
 
