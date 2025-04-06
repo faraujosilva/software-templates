@@ -138,7 +138,7 @@ spec:
           orgName: vvrepo
           repoName: ${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
-          system: ${{ parameters.system }}
+          system: teste
           applicationType: api
           description: ${{ parameters.description }}
           namespace: ${{ parameters.namespace }}
