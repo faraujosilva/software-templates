@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: go-backend-template-teste
   title: GO Backend
-  description: Create a starter Go backend application with a CI pipeline
+  description: Go BACKEND
   tags:
     - recommended
     - go
