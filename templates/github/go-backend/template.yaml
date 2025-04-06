@@ -10,7 +10,6 @@ metadata:
 spec:
   owner: ${{ parameters.owner }}
   type: service
-  system: janus-idp
 
   parameters:
     - title: Provide information about the new component
@@ -34,15 +33,7 @@ spec:
           ui:field: EntityPicker
           ui:options:
             catalogFilter:
-              - kind: User
-        system:
-          title: System
-          type: string
-          ui:field: EntityPicker
-          ui:options:
-            catalogFilter:
-              kind:
-                - System
+              - kind: Group
         port:
           title: Port
           type: number
@@ -105,7 +96,7 @@ spec:
           orgName: vvrepo
           repoName: ${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
-          system: ${{ parameters.system }}
+          system: teste
           applicationType: api
           description: ${{ parameters.description }}
           namespace: ${{ parameters.namespace }}
@@ -127,7 +118,7 @@ spec:
           orgName: vvrepo
           repoName: ${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
-          system: ${{ parameters.system }}
+          system: teste
           applicationType: api
           description: ${{ parameters.description }}
           namespace: ${{ parameters.namespace }}
