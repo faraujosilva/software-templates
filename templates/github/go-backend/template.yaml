@@ -15,15 +15,11 @@ spec:
   parameters:
     - title: Provide information about the new component
       required:
-        - orgName
         - repoName
         - owner
         - system
         - port
       properties:
-        orgName:
-          title: Organization Name
-          type: string
         repoName:
           title: Repository Name
           type: string
@@ -169,7 +165,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: ${{ parameters.description }}
-        repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
+        repoUrl: github.com?owner=vvrepo&repo=${{ parameters.repoName }}
         defaultBranch: main
 
     - id: register
