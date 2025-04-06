@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: go-backend-template
-  title: Create a Go Backend application with a CI pipeline
+  name: go-backend-template-teste
+  title: GO Backend
   description: Create a starter Go backend application with a CI pipeline
   tags:
     - recommended
