@@ -8,7 +8,7 @@ metadata:
     - recommended
     - go
 spec:
-  owner: ${{ parameters.owner }}
+  owner: vvrepo
   type: service
 
   parameters:
